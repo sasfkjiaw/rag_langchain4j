@@ -1,7 +1,6 @@
 package com.zzz.rag.langchain4j;
 
 import com.zzz.rag.langchain4j.assistant.Assistant;
-
 import com.zzz.rag.langchain4j.assistant.MemoryChatAssistant;
 import com.zzz.rag.langchain4j.assistant.SeparateChatAssistant;
 import dev.langchain4j.community.model.dashscope.QwenChatModel;
@@ -56,11 +55,11 @@ public class ChatMemoryTest {
 
     @Test
     public void testChatMemory5() {
-        String answer1 = separateChatAssistant.chat(1,"我是yudy");
+        String answer1 = separateChatAssistant.chat(1, "我是yudy");
         System.out.println(answer1);
-        String answer2 = separateChatAssistant.chat(1,"我是谁");
+        String answer2 = separateChatAssistant.chat(1, "我是谁");
         System.out.println(answer2);
-        String answer3 = separateChatAssistant.chat(2,"我是谁");
+        String answer3 = separateChatAssistant.chat(2, "我是谁");
         System.out.println(answer3);
     }
 }
