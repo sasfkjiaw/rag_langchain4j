@@ -10,7 +10,9 @@ import static dev.langchain4j.service.spring.AiServiceWiringMode.EXPLICIT;
 @AiService(
         wiringMode = EXPLICIT,
         chatModel = "qwenChatModel",
-        chatMemoryProvider = "chatMemoryProviderXiaozhi"
+        chatMemoryProvider = "chatMemoryProviderXiaozhi",
+        tools = "appointmentTools",
+        contentRetriever = "contentRetrieverXiaozhi" //配置向量存储(即，具有rag能力了)
 )
 public interface XiaozhiAgent {
 
